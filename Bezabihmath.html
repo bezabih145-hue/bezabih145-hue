@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+ 
+<html>
+   <head> 
+      <meta charset="utf-8">
+      <meta name="viewport"content="width=device-width, intial-scale =1.0">
+      <meta name="keywords"content="Html,Css,javaScript">
+      <meta name="description"content="This is Bezabihmath website">
+      <meta Base="www.Bezabihmath.com"target="_blank">
+      <meta author="Bezabih Yohannes">
+     <title> Bezabihmath</title>
+     <style> 
+   *   {
+    box-sizing:border-box;
+      }
+   .row::after   {
+     content:" ";
+     clear:both;
+     display:block;
+      }
+   [class*="col-"]   {
+      float:left;
+    }
+       h1   {
+     color:#ffffff;
+    text-align:center;
+     font-size:5vw;
+    border-style:solid;
+   border-width:75px;
+   border-color:#800080;
+   box-shadow:10px 10px #000000;
+   border-radius:10px;
+    background:#000000;
+      }
+   h1:hover   {
+    background-color:yellow;
+      }
+   ul  {
+   font-size:30px;
+   overflow:hidden;
+   background:#ff0000;
+   box-shadow:5px 5px 5px #000000;
+   opacity:0.9;
+   border-radius:5px;
+   
+     }
+ li {
+     text-decoration:none;
+     font-color:black;
+    display:inline-block;
+    padding:25px 20px 25px 50px;
+     }
+   li a:visited   {
+       background:#800080;
+      }
+   li a:active   {
+    background:#yellow;
+       }
+  li a:hover   {
+   background-color:#ffffff;
+      }
+    .active   {
+       background-color:white;
+        }
+     h6  {
+        color:#ffffff;
+      font-size:50px;
+    width:400px;
+     position:fixed;
+     text-shadow:5px 5px 7px #0000ff;
+      }
+   h6:hover   {
+     background:#800080;
+     }
+   .menu h2 {
+     color:#800080;
+    margin:5px;
+    background:yellow;
+     box-shadow:0 1px 3px rgba (0,0,0,0.12), 0 1px 2px rgba (0,0,0,0.25);
+      }
+   .menu h2:hover   {
+     background:orange;
+     }
+   .menu::first-letter   {
+     font-size:50px;
+      }
+    .main  {
+      margin:5px;
+      font-size:20px;
+       display:inline-block;
+      }
+   .main:hover   {
+     background:#ff0000;
+     }
+   .main::first-line   {
+   background:#ff0000;
+    }
+   .main::first-letter   {
+      font-size:50px;
+     background:yellow;
+     }
+   ::selection    {
+      color:yellow;
+      background:#800080;
+      }
+   #lingrad   {
+       align:right;
+      height:200px;
+      width:200px;
+      background:linear-gradient(red,yellow,purple,white,black);
+      border-radius:50%;
+      }
+   #lingrad:hover   {
+     background:#ffffff;
+      }
+   footer   {
+       font-size:25px;
+      text-align:center;
+      color:#ffffff;
+      height:100px;
+     background:#000000;
+     padding:15px;
+      border-radius:10px;
+       }
+   footer:hover    {
+     background:#800080;
+     } 
+   h4   {
+      font-weight:bold;
+      float:right;
+      }
+    .aside   {
+       float:right;
+       font-style:oblique;
+       font-size:35px;
+      margin:5px;
+      color:#ffff00;
+    background:#800080;
+    text-shadow:5px 5px 10px #000000;  
+      }
+   .aside:hover   {
+   background:#ff0000;
+     }
+   p   {
+      font-size:25px;
+    background:yellow;
+     width:25%;
+     float:right;
+        }
+   p:hover   {
+     background:#ff0000;
+    }
+   Button   {
+    float:right;
+    color:yellow;
+    background:#800080;
+    margin:3px;
+    }
+    @-webkit-keyframes move   {
+     from  {left:0;top:0;}
+      100%  {left:100%;top:100%;}
+     to    {right:100%;bottom:100%;}
+     }
+   #animl  {-webkit-animation:move 5s ease-out;
+            color:yellow;
+         position:absolute;
+        height:150px; width:150px; border-radius:50%;
+        text-align:center; background:conic-gradient(red,yellow,green,blue); 
+        -webkit-animation-delay:0s;
+        -webkit-animation-duration:60s;
+        -webkit-animation-direction:alternate;
+       -webkit-animation-iteration-count:infinite;
+       -webkit-animation-name:@keyfram-name;
+       -webkit-animation-timing-function:linear;
+             }
+   #animl:hover   {
+     background:#00ff00;
+      }
+    [class*="col-"]   {
+       width:100%;
+       }
+   @media only screen and (min-width:600px)  {
+   .col-s-1 {width:8.33%;}
+   .col-s-2 {width:16.66%;}
+   .col-s-3 {width:25%;}
+   .col-s-4 {width:33.33%;}
+   .col-s-5 {width:41.66%;}
+   .col-s-6 {width:50%;}
+   .col-s-7 {width:58.33%;}
+   .col-s-8 {width:66.66%;}
+   .col-s-9 {width:75%;}
+   .col-s-10 {width:83.33%;}
+   .col-s-11 {width:91.66%;}
+   .col-s-12 {width:100%;}
+     }
+   @media only screen and (min-width:768px)  {
+   .col-1 {width:8.33%;}
+   .col-2 {width:16.66%;}
+   .col-3 {width:25%;}
+   .col-4 {width:33.33%;}
+   .col-5 {width:41.66%;}
+   .col-6 {width:50%;}
+   .col-7 {width:58.33%;}
+    .col-8 {width:66.66%;}
+    .col-9 {width:75%;}
+   .col-10 {width:83.33%;}
+   .col-11 {width:91.66%;}
+   .col-12 {width:100%;}
+      }
+        </style>
+  </head>
+  <body>
+      <div class="header">
+     <h1> BEZABIHMATH </h1>
+      </div>
+    <div>
+    <ul>
+       <li> <a href="bezabihmath.html">Home</a>
+      <li><a href="website.html"> website</a>
+     <li><a href="math.html">math</a>
+    <li><a href="contact.html">contact</a>
+    <li><a href="about.html">about</a>
+   </ul>
+   
+    <h4><a href="form.html"> sign in</a></h4>
+    <h6> <b>BEZABIHMATH PROGRAMMING</b></h6> 
+   <div class="col-3 col-s-3 menu">
+   <h2>We develope website for:</h2>                                     
+      <h2>* personal</h2>                                                                            
+    <h2>* Government orginization</h2>                                      
+   <h2>* None Government orginization</h2>                           
+   <h2> * Institution &</h2>                                                         
+    <h2>* Businnes orginization</h2>
+    <h2>We build content based,vibrant and interactive website!</h2>
+   </div>
+  <div class="col-6 col-s-9 main">
+   <h2>
+  As we know <u>"information is power." </u>
+there is nothing like website to promote 
+your self,your service,your orginization,
+your institution and your businnes.
+  Therefore come and take your website!
+we build content based,vibrant and interactive website!
+  </h2>
+  <h2>
+        Contact us on 
+          Phone:0985099922
+          email:bezabih145@gmail.com
+  </h2>
+  </div>
+   <div class="col-2 col-s-11 aside">
+       <h3> <mark>Math</mark></h3>
+    <a>If you get the Formula,every thing is linear.</a><br>
+       <a> 1.m=bd/p</a><br>
+       <a>2.c<sup>2</sup>=vs/p</a><br>
+       <a>3.e<sup>i0</sup>+1=0</a>
+     </div>
+  </div>
+  <form>
+  <p id="lingrad"></p>
+  </form >  
+    <button type="button"onclick="randomNumber()">Number</button>
+    <button type="button"onclick="myFunction()">O K</button>
+    <button type="button"onclick="changeContent()">  content</button>
+    <button type="button"onclick="changeStyle()">style</button>
+    <button onclick="show()">Date</button>
+    <button onclick="hide()">No Date</button>
+    <p id="demo"></p>
+  <p id="demo1">How about Bezabihmath?</p>
+    <p id="demo2"></p>
+   <p id="demo3">This Is Bezabihmath</p>
+   <p id="demo4"></p>
+    <!--<p id="demo5"</p>
+    <p> id="demo6"></p>-->
+    <p> id="Button"></p>
+    <p> id="demo7"></p>
+    <script type="text/javascript">
+     function changeContent()   {
+        document.getElementById("demo1").innerHTML="Bezabihmath is best!";
+          }
+   </script>
+    <script type="text/javascript">
+    function changeStyle()   {
+     document.getElementById("demo3").style.fontSize="50px";
+     document.getElementById("demo3").style.fontStyle="italic";
+      document.getElementById("demo3").style.color="white";
+     document.getElementById("demo3").style.background="black";
+     document.getElementById("demo3").style.borderRadius="10px";
+     }
+    </script>
+    <script type="text/javascript">
+      function show()   {
+     document.getElementById("demo").style.display="block";
+        }
+     function hide()   {
+      document.getElementById("demo").style.display="none";
+      }
+    </script>
+  <script>
+   var d1=new Date()
+  
+    function myFunction()  {
+     alert("Bezabihmath!") ;
+     }
+   document.getElementById("demo").innerHTML=d1;
+   document.getElementById("demo4").innerHTML=alert;
+  </script>
+    <script>
+      function randomNumber()   {
+     document.getElementById("demo2").innerHTML=Math.floor(Math.random()*10);
+         }
+   </script>
+   <script>
+    /*if (confirm("press button"))  {
+     text:"you pressed ok!";
+      }else   {
+      text:"you pressed cancel!";
+      }
+    confirm("confirm")
+    document.getElementById("demo5").innerHTML=confirm;
+    let person=prompt("please inter your name");
+     document.getElementById("demo6").innerHTML=prompt;*/
+   </script>
+   <script>
+     const element=document.getElementById("button");
+    element.addEventLestiner("click",message)
+     function message()    {
+      alert("Button clicked")
+     }
+   </script>
+   <script>
+    function mySum()    {
+     write("yes")
+     }
+    document.getElementById("demo7").innerHTML="mySum()";
+   </script>
+
+  <div id="animl"><b>Bezabihmath programming!</b></div>
+<iframe src="Bezabihmath.html" width="300px"height="500px" style="border:7px solid #000000;"></iframe>
+<footer> 
+  <h5> &copy;2024 By Bezabihmath. All Right Reserved.</h5>
+ </footer>
+ </body>
+</html
